@@ -83,3 +83,76 @@ while user_number != secret_number:
     print("Ha ha! You're stuck in my loop!")
     user_number = int(input("Enter the number again: "))
 print(secret_number, "Well done, muggle! You are free now.")
+
+#3.2.1.6
+import time
+for second in range(1, 6):
+    print(second, "Mississippi")
+    time.sleep(1)
+    print("Ready or not, here I come!")
+
+#3.2.1.9
+while True:
+    word = input("You're stuck in an infinite loop!\nEnter the secret word to leave the loop: ")
+    if word == "chupacabra":
+        break
+print("You've successfully left the loop!")
+
+#3.2.1.10
+user_word = input("Enter your word: ")
+for letter in user_word:
+    if letter == "A":
+        continue
+    elif letter == "E":
+        continue
+    elif letter == "I":
+        continue
+    elif letter == "O":
+        continue
+    elif letter == "U":
+        continue
+    else:
+print(letter)
+
+#3.2.1.10
+word_without_vowels = ""
+user_word = input("Enter your word: ")
+user_word = user_word.upper()
+for letter in user_word:
+    if letter == "A":
+        continue
+    elif letter == "E":
+        continue
+    elif letter == "I":
+        continue
+    elif letter == "O":
+        continue
+    elif letter == "U":
+        continue
+    else:
+        word_without_vowels += letter
+print(word_without_vowels)
+#3.2.1.14
+blocks = int(input("Enter the number of blocks: "))
+height = 0
+in_layer = 1
+while in_layer <= blocks:
+    height += 1
+    blocks -= in_layer
+    in_layer += 1
+print("The height of the pyramid:", height)
+#3.2.1.15
+c0 = int(input("Enter c0: "))
+if c0 > 1:
+	steps = 0
+	while c0 != 1:
+		if c0 %2 != 0:
+			cnew = 3 * c0 + 1
+		else:
+			cnew = c0 // 2
+		print(c0)
+		c0 = cnew
+		steps += 1
+	print("steps =",steps)
+else:
+	print("Bad c0 value")
