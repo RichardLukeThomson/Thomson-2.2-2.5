@@ -2,7 +2,7 @@
 # Additional lab set by Chris H with my own improvements
 # Practicing using two-dimensional arrays (a matrix)
 
-# Created by Chris Firth on 24 Sep 21
+# Created by Thomson on 27 Sep 21
 
 # This has the following improvements on TTT_ninja.py
 # - You cannot cheat and overwrite a previosly written value
